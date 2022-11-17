@@ -1,0 +1,17 @@
+{
+  "name": "ds-guide",
+  "version": "1.0.0",
+  "description": "Complementary code for kickstartDS Create your Design System-guide",
+  "homepage": "https://www.kickstartds.com/docs/guides/create/",
+  "main": "dist/index.js",
+  "license": "(MIT OR Apache-2.0)",
+  "author": "Jonas Ulrich <jonas.ulrich@kickstartds.com> (https://www.kickstartDS.com/)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@kickstartds/base": "^2.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
