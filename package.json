@@ -1,7 +1,7 @@
 {
-  "name": "ds-guide",
+  "name": "@my/design-system",
   "version": "1.0.0",
-  "description": "Complementary code for kickstartDS Create your Design System-guide",
+  "description": "Design System for all @MY needs",
   "homepage": "https://www.kickstartds.com/docs/guides/create/",
   "main": "dist/index.js",
   "license": "(MIT OR Apache-2.0)",
