@@ -2,14 +2,14 @@
   "ks": {
     "font-family": {
       "display": {
-        "value": "Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
+        "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
         "token": {
           "category": "Font Families",
           "presenter": "FontFamily"
         }
       },
       "copy": {
-        "value": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
         "token": {
           "category": "Font Families",
           "presenter": "FontFamily"
@@ -64,13 +64,10 @@
       "display": {
         "bp-factor": {
           "phone": {
-            "value": 1
+            "value": 1.167
           },
           "tablet": {
-            "value": 1.5
-          },
-          "laptop": {
-            "value": 1.75
+            "value": 1.333
           }
         },
         "xxs-base": {
@@ -379,22 +376,22 @@
     "line-height": {
       "display": {
         "xxs": {
-          "value": 1.45
+          "value": 1.75
         },
         "xs": {
-          "value": 1.50
+          "value": 1.75
         },
         "s": {
-          "value": 1.55
+          "value": 1.75
         },
         "m": {
-          "value": 1.60
+          "value": 1.75
         },
         "l": {
-          "value": 1.65
+          "value": 1.75
         },
         "xl": {
-          "value": 1.70
+          "value": 1.75
         },
         "xxl": {
           "value": 1.75

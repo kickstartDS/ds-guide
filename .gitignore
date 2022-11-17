@@ -1,5 +1,14 @@
 # Node
 node_modules
 
+# Storybook
+storybook-static
+
 # kickstartDS
 src/token/tokens.css
+src/token/icons/IconSprite.js
+src/token/storybook/tokens.css
+src/token/storybook/tokens.js
+src/token/storybook/icons.svg
+static/manager.css
+static/manager.css.map

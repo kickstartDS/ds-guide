@@ -2,19 +2,39 @@
   "name": "@my/design-system",
   "version": "1.0.0",
   "description": "Design System for all @MY needs",
-  "homepage": "https://www.kickstartds.com/docs/guides/create/",
   "main": "dist/index.js",
-  "license": "(MIT OR Apache-2.0)",
-  "author": "Jonas Ulrich <jonas.ulrich@kickstartds.com> (https://www.kickstartDS.com/)",
   "scripts": {
-    "init-tokens": "kickstartDS tokens init",
+    "build-storybook": "build-storybook",
     "build-tokens": "kickstartDS tokens compile",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "init-tokens": "kickstartDS tokens init",
+    "sass-manager": "sass --load-path=node_modules .storybook/manager.scss static/manager.css",
+    "storybook": "start-storybook -p 6006",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass-manager": "yarn sass-manager --watch"
   },
+  "author": "Jonas Ulrich",
+  "license": "MIT",
   "dependencies": {
     "@kickstartds/base": "^2.0.2",
     "kickstartds": "^1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@kickstartds/storybook-addon-component-tokens": "^0.1.6",
+    "@kickstartds/storybook-addon-jsonschema": "^1.0.5",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-webpack4": "^6.5.12",
+    "@storybook/manager-webpack4": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
+    "@whitespace/storybook-addon-html": "git+https://github.com/lmestel/storybook-addon-html.git",
+    "babel-loader": "^8.2.5",
+    "sass": "^1.56.0",
+    "storybook-design-token": "^2.7.1"
   }
 }
