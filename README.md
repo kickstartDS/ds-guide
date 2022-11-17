@@ -2,10 +2,10 @@
 
 This code is meant to be used alongside our main guide: ["Create your Design System"](https://www.kickstartds.com/docs/guides/create/)
 
-You're currently looking at the result for step 1 of that guide:
+You're currently looking at the result for step 2 of that guide:
 
-1. [**Start your Design System**](https://www.kickstartds.com/docs/guides/create/start)
-2. [Design Application](https://www.kickstartds.com/docs/guides/create/design)
+1. [Start your Design System](https://www.kickstartds.com/docs/guides/create/start)
+2. [**Design Application**](https://www.kickstartds.com/docs/guides/create/design)
 3. [Configure Storybook](https://www.kickstartds.com/docs/guides/create/storybook)
 4. [Add Components](https://www.kickstartds.com/docs/guides/create/components)
 5. [Publish your Design System](https://www.kickstartds.com/docs/guides/create/publish)
