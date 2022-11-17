@@ -7,10 +7,13 @@
   "license": "(MIT OR Apache-2.0)",
   "author": "Jonas Ulrich <jonas.ulrich@kickstartds.com> (https://www.kickstartDS.com/)",
   "scripts": {
+    "init-tokens": "kickstartDS tokens init",
+    "build-tokens": "kickstartDS tokens compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@kickstartds/base": "^2.0.2",
+    "kickstartds": "^1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
