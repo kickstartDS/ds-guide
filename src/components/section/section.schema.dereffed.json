@@ -1,0 +1,288 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/section.schema.json",
+  "title": "Section",
+  "description": "Component used to layout components into pages",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "headline": {
+      "type": "string",
+      "title": "Headline",
+      "description": "Headline for the section",
+      "format": "markdown"
+    },
+    "width": {
+      "type": "string",
+      "title": "Width",
+      "description": "Width of section to use",
+      "enum": [
+        "full",
+        "max",
+        "wide",
+        "default",
+        "narrow"
+      ],
+      "default": "default"
+    },
+    "gutter": {
+      "type": "string",
+      "title": "Gutter",
+      "description": "Size of gutter to use",
+      "enum": [
+        "large",
+        "default",
+        "small",
+        "none"
+      ],
+      "default": "default"
+    },
+    "mode": {
+      "type": "string",
+      "title": "Mode",
+      "description": "Layout mode used for section contents",
+      "enum": [
+        "default",
+        "tile",
+        "list"
+      ],
+      "default": "default"
+    },
+    "content": {
+      "type": "array",
+      "title": "Content",
+      "description": "Allowed content for the section",
+      "items": {
+        "anyOf": [
+          {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "$id": "http://schema.mydesignsystem.com/button.schema.json",
+            "title": "Button",
+            "description": "Component used for user interaction",
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "title": "Label",
+                "description": "Text content to display inside the button"
+              },
+              "target": {
+                "type": "string",
+                "title": "Target",
+                "description": "Target that should be linked, makes the button behave like a link semantically",
+                "format": "uri"
+              },
+              "variant": {
+                "type": "string",
+                "title": "Variant",
+                "description": "Variant of button to be used",
+                "enum": [
+                  "primary",
+                  "secondary",
+                  "tertiary"
+                ],
+                "default": "secondary"
+              },
+              "size": {
+                "type": "string",
+                "title": "Size",
+                "description": "Size of button to use",
+                "enum": [
+                  "small",
+                  "medium",
+                  "large"
+                ],
+                "default": "medium"
+              },
+              "disabled": {
+                "type": "boolean",
+                "title": "Disabled?",
+                "description": "Whether the button should be disabled",
+                "default": false
+              }
+            },
+            "required": [
+              "label"
+            ]
+          },
+          {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "$id": "http://schema.mydesignsystem.com/headline.schema.json",
+            "title": "Headline",
+            "description": "Component used for headlines",
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string",
+                "title": "Text",
+                "description": "Text content of headline",
+                "format": "markdown"
+              },
+              "sub": {
+                "type": "string",
+                "title": "Sub",
+                "description": "Subheadline content",
+                "format": "markdown"
+              },
+              "switchOrder": {
+                "type": "boolean",
+                "title": "Switch order?",
+                "description": "Switch order of headline and subheadline",
+                "default": false
+              },
+              "level": {
+                "type": "string",
+                "title": "Level",
+                "description": "Level of headline to use",
+                "enum": [
+                  "h1",
+                  "h2",
+                  "h3",
+                  "h4",
+                  "p"
+                ],
+                "default": "h2"
+              },
+              "style": {
+                "type": "string",
+                "title": "Style",
+                "description": "Style of headline to show",
+                "enum": [
+                  "h1",
+                  "h2",
+                  "h3",
+                  "h4",
+                  "p"
+                ],
+                "default": "h2"
+              },
+              "spaceAfter": {
+                "type": "string",
+                "title": "Space after?",
+                "description": "Whether to display space after headline",
+                "enum": [
+                  "minimum",
+                  "small",
+                  "large"
+                ],
+                "default": "small"
+              }
+            },
+            "required": [
+              "level",
+              "text"
+            ]
+          },
+          {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "$id": "http://schema.mydesignsystem.com/teaser-card.schema.json",
+            "title": "Teaser Card",
+            "description": "Component used to tease content",
+            "type": "object",
+            "properties": {
+              "headline": {
+                "type": "string",
+                "title": "Headline",
+                "description": "Headline for the teaser card",
+                "format": "markdown"
+              },
+              "text": {
+                "type": "string",
+                "title": "Text",
+                "description": "Body text for the teaser card",
+                "format": "markdown"
+              },
+              "target": {
+                "type": "string",
+                "title": "Target",
+                "description": "Target that should be linked",
+                "format": "uri"
+              },
+              "image": {
+                "type": "string",
+                "title": "Image",
+                "description": "Image to display as cover",
+                "format": "uri"
+              },
+              "inverted": {
+                "type": "boolean",
+                "title": "Invert card?",
+                "description": "Whether to invert the card",
+                "default": false
+              }
+            },
+            "required": [
+              "headline",
+              "text",
+              "target"
+            ]
+          }
+        ]
+      }
+    },
+    "style": {
+      "type": "string",
+      "title": "Style",
+      "description": "Style of background",
+      "enum": [
+        "default",
+        "accent",
+        "bold"
+      ],
+      "default": "default"
+    },
+    "spaceBefore": {
+      "type": "string",
+      "title": "Space Before",
+      "description": "Amount of spacing before the section",
+      "enum": [
+        "default",
+        "small",
+        "none"
+      ],
+      "default": "default"
+    },
+    "spaceAfter": {
+      "type": "string",
+      "title": "Space After",
+      "description": "Amount of spacing after the section",
+      "enum": [
+        "default",
+        "small",
+        "none"
+      ],
+      "default": "default"
+    },
+    "inverted": {
+      "type": "boolean",
+      "title": "Inverted",
+      "description": "Whether to invert the section",
+      "default": false
+    },
+    "ctas": {
+      "type": "array",
+      "title": "Call to actions",
+      "description": "Add Call to actions to the end of the section",
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "target"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "title": "Label",
+            "description": "Label for the Call to action"
+          },
+          "target": {
+            "type": "string",
+            "title": "Target",
+            "description": "Target for the Call to action",
+            "format": "uri"
+          }
+        }
+      }
+    }
+  }
+}

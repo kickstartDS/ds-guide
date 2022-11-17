@@ -1,15 +1,24 @@
 import { actions } from "@storybook/addon-actions";
 import { DocsContainer } from "@storybook/addon-docs";
 
-import "@kickstartds/base/lib/global/base.js";
-import "@kickstartds/base/lib/global/base.css";
+import { unpackDecorator } from '@kickstartds/core/lib/storybook/helpers';
 
-import IconSprite from "../src/token/icons/IconSprite";
+import '@kickstartds/base/lib/global/base.js';
+import '@kickstartds/base/lib/global/base.css';
 
-import "../src/token/tokens.css";
+import IconSprite from '../src/token/icons/IconSprite';
+import Providers from '../src/components/Providers';
+
+import '../src/token/tokens.css';
 
 const myActions = actions("radio");
 window._ks.radio.on("*", myActions.radio);
+
+const providerDecorator = (Story, context) => (
+  <Providers>
+    <Story {...context} />
+  </Providers>
+);
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -37,15 +46,17 @@ export const parameters = {
   },
   docs: {
     container: (props) => (
-      <>
+      <Providers>
         <IconSprite />
         <DocsContainer {...props} />
-      </>
+      </Providers>
     ),
   },
 };
 
 export const decorators = [
+  unpackDecorator,
+  providerDecorator,
   (Story) => (
     <>
       <IconSprite />

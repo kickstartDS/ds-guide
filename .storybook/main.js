@@ -16,7 +16,7 @@ module.exports = {
     },
     "@whitespace/storybook-addon-html",
     "@kickstartds/storybook-addon-component-tokens",
-    "@kickstartds/storybook-addon-jsonschema",
+    // "@kickstartds/storybook-addon-jsonschema",
   ],
   framework: "@storybook/react",
   staticDirs: ["../static"],
