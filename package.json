@@ -35,6 +35,6 @@
     "@whitespace/storybook-addon-html": "git+https://github.com/lmestel/storybook-addon-html.git",
     "babel-loader": "^8.2.5",
     "sass": "^1.56.0",
-    "storybook-design-token": "^2.7.1"
+    "storybook-design-token": "^2.8.0"
   }
 }
