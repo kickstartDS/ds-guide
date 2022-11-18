@@ -11958,7 +11958,7 @@ sane@^4.0.3:
     minimist "^1.1.1"
     walker "~1.0.5"
 
-sass@^1.52.1, sass@^1.56.0:
+sass@^1.52.1, sass@^1.55.0, sass@^1.56.0:
   version "1.56.1"
   resolved "https://registry.npmjs.org/sass/-/sass-1.56.1.tgz#94d3910cd468fd075fa87f5bb17437a0b617d8a7"
   integrity sha512-VpEyKpyBPCxE7qGDtOcdJ6fFbcpOM+Emu7uZLxVrkX8KVU/Dp5UF7WLvzqRuUhB6mqqQt1xffLoG+AndxTZrCQ==
@@ -12461,10 +12461,10 @@ store2@^2.12.0:
   resolved "https://registry.npmjs.org/store2/-/store2-2.14.2.tgz#56138d200f9fe5f582ad63bc2704dbc0e4a45068"
   integrity sha512-siT1RiqlfQnGqgT/YzXVUNsom9S0H1OX+dpdGN1xkyYATo4I6sep5NmsRD/40s3IIOvlCq6akxkqG82urIZW1w==
 
-storybook-design-token@^2.7.1:
-  version "2.7.1"
-  resolved "https://registry.npmjs.org/storybook-design-token/-/storybook-design-token-2.7.1.tgz#9d360902ee9b7e6d0ed6e810272ea37152bc2483"
-  integrity sha512-HU4dAa5NQ6jmrX0BJ9tPTznr5DRirqw2FiX80FKovs4pbx8RGCVrF2J+V9SU4VuDrTjYhiDyCtIhP8VHFYdYkg==
+storybook-design-token@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.npmjs.org/storybook-design-token/-/storybook-design-token-2.8.0.tgz#dc638d2d5ef25684348e534b035ac91ba8a4f2c0"
+  integrity sha512-ouOqjPnKgosxDbzQIyBHJu7VPTvC9loqlspqfEDA3GFGZQFhf+TQUEO1hEKJiIwLhMOxVBOBTpCRcv77lFVHNg==
   dependencies:
     "@storybook/addons" "^6.3.12"
     "@storybook/components" "^6.3.12"
